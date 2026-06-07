@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://u-dj200.github.io/U-DJ200/sitemap.xml
