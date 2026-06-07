@@ -103,7 +103,7 @@
     line-height: 1.6;
   }
   header {
-    padding: 64px 24px 32px;
+    padding: 64px 24px 40px;
     text-align: center;
     background: linear-gradient(180deg, #17171b 0%, #0b0b0d 100%);
     border-bottom: 1px solid #232327;
@@ -123,7 +123,7 @@
   h2 { font-size: 1.4rem; margin-top: 48px; border-bottom: 1px solid #232327; padding-bottom: 8px; }
   ul { padding-left: 1.2em; }
   li { margin-bottom: 8px; }
-  img.screenshot { width: 100%; border-radius: 10px; border: 1px solid #232327; margin-top: 24px; }
+  img.screenshot { width: 100%; border-radius: 10px; border: 1px solid #232327; margin-top: 24px; box-shadow: 0 12px 40px -16px rgba(0,0,0,0.6); }
   .cta {
     display: inline-block;
     margin-top: 28px;
@@ -133,8 +133,32 @@
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
+    transition: background 0.15s ease, transform 0.15s ease;
   }
-  .cta:hover { background: #3c66e6; }
+  .cta:hover { background: #3c66e6; transform: translateY(-1px); }
+  .cta-row { margin-top: 28px; }
+  .cta-note { display: block; margin-top: 12px; font-size: 0.85rem; color: #8a8a93; }
+  .cta-secondary {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 26px;
+    border: 1px solid #3a3a42;
+    color: #d6d6db;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .cta-secondary:hover { border-color: #5a5a66; color: #fff; }
+  .closing {
+    margin-top: 56px;
+    padding: 36px 24px;
+    text-align: center;
+    background: #131316;
+    border: 1px solid #232327;
+    border-radius: 14px;
+  }
+  .closing h2 { margin-top: 0; border-bottom: none; padding-bottom: 0; }
   footer {
     text-align: center;
     padding: 32px 24px 64px;
@@ -151,6 +175,10 @@
   <h1>U-DJ200</h1>
   <p class="tagline">A macOS DJ app built <strong>exclusively for the Pioneer DDJ-200</strong> controller — two-deck mixing, AI stem separation, and a studio-grade beat sync engine for techno, house, trance, EDM and every dance music genre. Free 90-day trial.</p>
   <span class="badge">Built specifically for the Pioneer DDJ-200 · macOS · Free 90-day trial</span>
+  <p class="cta-row">
+    <a class="cta" href="https://github.com/U-DJ200/U-DJ200/releases">Download U-DJ200 for macOS →</a>
+    <span class="cta-note">Free 90-day trial · Apple Silicon · macOS 14+</span>
+  </p>
 </header>
 
 <main>
@@ -202,6 +230,13 @@
 
   <h2>Compatibility &amp; trademark notice</h2>
   <p>U-DJ200 is an independent, third-party application built to work with the Pioneer DJ DDJ-200 controller. It is not affiliated with, endorsed by, or sponsored by Pioneer DJ, AlphaTheta, or any related company. "DDJ-200" and "Pioneer DJ" are trademarks of their respective owners, referenced here solely to describe hardware compatibility.</p>
+
+  <div class="closing">
+    <h2>Ready to take your DDJ-200 further?</h2>
+    <p>Free 90-day trial — no credit card, no account, just download and go.</p>
+    <a class="cta" href="https://github.com/U-DJ200/U-DJ200/releases">Download U-DJ200 for macOS →</a><br>
+    <a class="cta-secondary" href="https://github.com/U-DJ200/U-DJ200/issues/new/choose">Have a question first? Ask here</a>
+  </div>
 </main>
 
 <footer>
