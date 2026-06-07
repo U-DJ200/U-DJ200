@@ -2,7 +2,7 @@
 
 > **Built exclusively for the Pioneer DDJ-200.** Not a generic DJ app with a controller mapping bolted on — every part of U-DJ200, from the UI to the MIDI layer to the mixing engine, is designed around this specific controller.
 
-**U-DJ200** is a free, native macOS DJ application built specifically for the **Pioneer DDJ-200** USB DJ controller. If you own a DDJ-200 and want dedicated Mac software with full hardware control, AI-powered stem separation, and a studio-grade beat sync engine, this is built for exactly that setup.
+**U-DJ200** is a native macOS DJ application built specifically for the **Pioneer DDJ-200** USB DJ controller, available as a **free 90-day trial**. If you own a DDJ-200 and want dedicated Mac software with full hardware control, AI-powered stem separation, and a studio-grade beat sync engine, this is built for exactly that setup.
 
 <img width="1466" height="832" alt="U-DJ200 for the DDJ-200" src="https://github.com/user-attachments/assets/e1e4780d-c431-4ca2-beb6-a17dc9aba498" />
 
@@ -18,8 +18,12 @@ It's built for DJs across **all techno and dance music genres** — techno, hous
 
 1. Download the latest **U-DJ200.dmg** for macOS from the [Releases](../../releases) page
 2. Open the DMG and drag **U-DJ200.app** into your Applications folder
-3. Plug in your Pioneer DDJ-200 controller via USB
-4. Launch U-DJ200 from your Applications folder
+3. **First launch only** — macOS Gatekeeper will block the app with *"Apple cannot check it for malicious software"* because it isn't notarized through an Apple Developer account:
+   - **Right-click** (Control-click) **U-DJ200.app** in Applications and choose **Open**, then click **Open** again in the dialog
+   - (If that doesn't work, go to **System Settings → Privacy & Security** and click **Open Anyway** next to the U-DJ200 message)
+   - You only need to do this once — every launch after that works normally
+4. Plug in your Pioneer DDJ-200 controller via USB
+5. Launch U-DJ200 from your Applications folder
 
 > **System requirements:**
 > - **macOS:** 14 (Sonoma) or later — built and tested on macOS 26.5
@@ -59,7 +63,7 @@ U-DJ200 is purpose-built for the Pioneer DDJ-200's specific layout and MIDI mapp
 Any genre — but it's specifically tuned for techno, house, trance, EDM, and other electronic dance music, where tight beat sync and accurate tempo detection matter most.
 
 **Is it free?**
-Yes — download the DMG from the Releases page and install it on your Mac.
+U-DJ200 is available as a **free 90-day trial** — download the DMG from the Releases page and install it on your Mac. The in-app status bar shows how many trial days remain.
 
 **What macOS versions are supported?**
 Apple Silicon (M-series) Macs running a recent version of macOS.
